@@ -2,9 +2,10 @@
 @import UIKit;
 
 #import "CALayer+EDODebugger.h"
-
 #import <objc/runtime.h>
 
+
+// 既存の`drawInContext:`を差し替える。
 void EDOSwapLayerForDebug()
 {
 #ifndef DEBUG
@@ -21,6 +22,8 @@ void EDOSwapLayerForDebug()
     });
 }
 
+
+// UIViewのレンダリングにボーダーを付与する。
 @implementation CALayer (EDODebugger)
 
 - (void)edo_swapDrawInContext:(CGContextRef)ctx
@@ -29,4 +32,5 @@ void EDOSwapLayerForDebug()
     self.borderWidth = 1.0;
     [self edo_swapDrawInContext:ctx];
 }
+
 @end

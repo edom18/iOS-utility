@@ -16,6 +16,7 @@
 		5CD1B75F1A34117900031A10 /* EdoUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B75E1A34117900031A10 /* EdoUtilityTests.m */; };
 		5CD1B7691A3411AF00031A10 /* EDOUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7681A3411AF00031A10 /* EDOUtilities.m */; };
 		5CD1B76D1A3415B600031A10 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B76C1A3415B600031A10 /* TestView.m */; };
+		5CD1B7711A341A0A00031A10 /* CALayer+EDODebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7701A341A0A00031A10 /* CALayer+EDODebugger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		5CD1B76B1A3415B600031A10 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		5CD1B76C1A3415B600031A10 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		5CD1B76E1A3416CC00031A10 /* EdoUtility-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EdoUtility-Prefix.pch"; sourceTree = "<group>"; };
+		5CD1B76F1A341A0A00031A10 /* CALayer+EDODebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+EDODebugger.h"; sourceTree = "<group>"; };
+		5CD1B7701A341A0A00031A10 /* CALayer+EDODebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+EDODebugger.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				5CD1B76A1A3411E300031A10 /* EDOUtilities.h */,
 				5CD1B76B1A3415B600031A10 /* TestView.h */,
 				5CD1B76C1A3415B600031A10 /* TestView.m */,
+				5CD1B76F1A341A0A00031A10 /* CALayer+EDODebugger.h */,
+				5CD1B7701A341A0A00031A10 /* CALayer+EDODebugger.m */,
 			);
 			path = EdoUtility;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				5CD1B74B1A34117900031A10 /* ViewController.m in Sources */,
 				5CD1B7691A3411AF00031A10 /* EDOUtilities.m in Sources */,
 				5CD1B76D1A3415B600031A10 /* TestView.m in Sources */,
+				5CD1B7711A341A0A00031A10 /* CALayer+EDODebugger.m in Sources */,
 				5CD1B7481A34117900031A10 /* AppDelegate.m in Sources */,
 				5CD1B7451A34117900031A10 /* main.m in Sources */,
 			);
