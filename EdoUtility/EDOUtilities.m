@@ -28,14 +28,14 @@ NSString* EDOLogDescription(id instance)
 {
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList([instance class], &count);
-    NSMutableString *description = [NSMutableString string];
+    NSMutableString *description = [NSMutableString stringWithString:@"Properties: (\n"];
     for (NSUInteger i = 0; i < count; i++) {
         objc_property_t property = properties[i];
         const char *propName     = property_getName(property);
         const char *propType     = property_getAttributes(property);
         NSString *propertyName   = @(propName);
         NSString *propertyType   = @(propType);
-        NSString *propertyString = @"%@ (";
+        NSString *propertyString = @"";
         
         SEL selector = NSSelectorFromString(propertyName);
         if ([instance respondsToSelector:selector] && [propertyType hasPrefix:@"T@"]) {
