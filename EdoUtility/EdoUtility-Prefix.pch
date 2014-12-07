@@ -1,6 +1,10 @@
 
 #ifdef __OBJC__
 
+@import Foundation;
+@import UIKit;
+
 #import "EDOUtilities.h"
+#import "Category/CALayer+EDODebugger.h"
 
 #endif

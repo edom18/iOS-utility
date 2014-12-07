@@ -15,6 +15,8 @@
     TestView *test = [[TestView alloc] init];
     NSLog(@"%@", test);
     
+    EDOSwapLayerForDebug();
+    
     [self.view addSubview:test];
 }
 
