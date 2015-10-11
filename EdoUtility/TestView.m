@@ -1,7 +1,7 @@
 
 #import "TestView.h"
 
-#import "EDOUtilities.h"
+#import "Utilities.h"
 
 @implementation TestView
 
