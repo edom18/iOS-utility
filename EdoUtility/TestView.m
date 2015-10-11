@@ -19,7 +19,7 @@
 - (NSString *)description
 {
     NSMutableString *description = [NSMutableString stringWithFormat:@"%@\n", [super description]];
-    NSString *log = EDOLogDescription(self);
+    NSString *log = UTLLogDescription(self);
     [description appendString:log];
     
     return description;

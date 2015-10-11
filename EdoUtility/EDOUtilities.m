@@ -4,7 +4,7 @@
 #import <objc/runtime.h>
 
 // テキストフォーマット（大本）
-NSString* EDOFormatVariant(NSString *format, va_list args)
+NSString* UTLFormatVariant(NSString *format, va_list args)
 {
 #if __has_feature(objc_arc)
     return [[NSString alloc] initWithFormat:format arguments:args];
@@ -13,18 +13,33 @@ NSString* EDOFormatVariant(NSString *format, va_list args)
 #endif
 }
 
-// テキストフォーマット
-NSString* EDOFormat(NSString *format, ...)
+
+/**
+ *  テキストフォーマット
+ *
+ *  @param format フォーマット
+ *  @param ...    フォーマットに対する引数
+ *
+ *  @return フォーマットされた文字列
+ */
+NSString* UTLFormat(NSString *format, ...)
 {
     va_list args;
     va_start(args, format);
-    NSString *str = EDOFormatVariant(format, args);
+    NSString *str = UTLFormatVariant(format, args);
     va_end(args);
     return str;
 }
 
-// 対象インスタンスのdescriptionを生成
-NSString* EDOLogDescription(id instance)
+
+/**
+ *  対象インスタンスのdescriptionを生成
+ *
+ *  @param instance descriptionを生成するインスタンス
+ *
+ *  @return descriptionをまとめた文字列
+ */
+NSString* UTLLogDescription(id instance)
 {
     unsigned int count;
     objc_property_t *properties = class_copyPropertyList([instance class], &count);
@@ -41,11 +56,11 @@ NSString* EDOLogDescription(id instance)
         if ([instance respondsToSelector:selector] && [propertyType hasPrefix:@"T@"]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            propertyString = EDOFormat(@"\t%@: %@ \n", propertyName, [instance performSelector:selector]);
+            propertyString = UTLFormat(@"\t%@: %@ \n", propertyName, [instance performSelector:selector]);
 #pragma clang diagnostic pop
         }
         else {
-            propertyString = EDOFormat(@"\t%@'s type is primitive (%@)\n", propertyName, propertyType);
+            propertyString = UTLFormat(@"\t%@'s type is primitive (%@)\n", propertyName, propertyType);
         }
         
         [description appendString:propertyString];

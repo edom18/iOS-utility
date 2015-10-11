@@ -9,7 +9,7 @@
  *
  *  @return 整形済文字列
  */
-NSString* EDOFormat(NSString *format, ...);
+NSString* UTLFormat(NSString *format, ...);
 
 
 /**
@@ -19,4 +19,4 @@ NSString* EDOFormat(NSString *format, ...);
  *
  *  @return 生成文字列
  */
-NSString* EDOLogDescription(id instance);
+NSString* UTLLogDescription(id instance);
