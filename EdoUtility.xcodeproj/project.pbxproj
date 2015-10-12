@@ -20,7 +20,6 @@
 		5CD1B7761A34357A00031A10 /* CALayer+EDODebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7751A34357A00031A10 /* CALayer+EDODebugger.m */; };
 		6036A59A1BC9EC820028BD27 /* UTLSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036A5991BC9EC820028BD27 /* UTLSingleton.m */; };
 		6036A59B1BC9EC820028BD27 /* UTLSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036A5991BC9EC820028BD27 /* UTLSingleton.m */; };
-		6036A59E1BCB41870028BD27 /* SingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036A59D1BCB41870028BD27 /* SingletonTest.m */; };
 		6036A5A11BCB45120028BD27 /* UTLMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036A5A01BCB45120028BD27 /* UTLMacro.m */; };
 		6036A5A21BCB45120028BD27 /* UTLMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6036A5A01BCB45120028BD27 /* UTLMacro.m */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,6 @@
 		5CD1B7751A34357A00031A10 /* CALayer+EDODebugger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CALayer+EDODebugger.m"; path = "EdoUtility/Category/CALayer+EDODebugger.m"; sourceTree = "<group>"; };
 		6036A5981BC9EC820028BD27 /* UTLSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTLSingleton.h; sourceTree = "<group>"; };
 		6036A5991BC9EC820028BD27 /* UTLSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTLSingleton.m; sourceTree = "<group>"; };
-		6036A59C1BCB41870028BD27 /* SingletonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTest.h; sourceTree = "<group>"; };
-		6036A59D1BCB41870028BD27 /* SingletonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonTest.m; sourceTree = "<group>"; };
 		6036A59F1BCB45120028BD27 /* UTLMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTLMacro.h; sourceTree = "<group>"; };
 		6036A5A01BCB45120028BD27 /* UTLMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTLMacro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,8 +137,6 @@
 			children = (
 				5CD1B75E1A34117900031A10 /* EdoUtilityTests.m */,
 				5CD1B75C1A34117900031A10 /* Supporting Files */,
-				6036A59C1BCB41870028BD27 /* SingletonTest.h */,
-				6036A59D1BCB41870028BD27 /* SingletonTest.m */,
 			);
 			path = EdoUtilityTests;
 			sourceTree = "<group>";
@@ -272,7 +267,6 @@
 			files = (
 				6036A5A21BCB45120028BD27 /* UTLMacro.m in Sources */,
 				5CD1B75F1A34117900031A10 /* EdoUtilityTests.m in Sources */,
-				6036A59E1BCB41870028BD27 /* SingletonTest.m in Sources */,
 				6036A59B1BC9EC820028BD27 /* UTLSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
