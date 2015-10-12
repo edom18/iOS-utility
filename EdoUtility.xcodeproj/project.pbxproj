@@ -14,7 +14,7 @@
 		5CD1B7501A34117900031A10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD1B74F1A34117900031A10 /* Images.xcassets */; };
 		5CD1B7531A34117900031A10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD1B7511A34117900031A10 /* LaunchScreen.xib */; };
 		5CD1B75F1A34117900031A10 /* EdoUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B75E1A34117900031A10 /* EdoUtilityTests.m */; };
-		5CD1B7691A3411AF00031A10 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7681A3411AF00031A10 /* Utilities.m */; };
+		5CD1B7691A3411AF00031A10 /* UTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7681A3411AF00031A10 /* UTLUtilities.m */; };
 		5CD1B76D1A3415B600031A10 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B76C1A3415B600031A10 /* TestView.m */; };
 		5CD1B7741A34314B00031A10 /* Category in Resources */ = {isa = PBXBuildFile; fileRef = 5CD1B7731A34314B00031A10 /* Category */; };
 		5CD1B7761A34357A00031A10 /* CALayer+EDODebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1B7751A34357A00031A10 /* CALayer+EDODebugger.m */; };
@@ -48,8 +48,8 @@
 		5CD1B7581A34117900031A10 /* EdoUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdoUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD1B75D1A34117900031A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CD1B75E1A34117900031A10 /* EdoUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdoUtilityTests.m; sourceTree = "<group>"; };
-		5CD1B7681A3411AF00031A10 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		5CD1B76A1A3411E300031A10 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		5CD1B7681A3411AF00031A10 /* UTLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTLUtilities.m; sourceTree = "<group>"; };
+		5CD1B76A1A3411E300031A10 /* UTLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTLUtilities.h; sourceTree = "<group>"; };
 		5CD1B76B1A3415B600031A10 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		5CD1B76C1A3415B600031A10 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		5CD1B76E1A3416CC00031A10 /* EdoUtility-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EdoUtility-Prefix.pch"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 				5CD1B74F1A34117900031A10 /* Images.xcassets */,
 				5CD1B7511A34117900031A10 /* LaunchScreen.xib */,
 				5CD1B7421A34117900031A10 /* Supporting Files */,
-				5CD1B7681A3411AF00031A10 /* Utilities.m */,
-				5CD1B76A1A3411E300031A10 /* Utilities.h */,
+				5CD1B7681A3411AF00031A10 /* UTLUtilities.m */,
+				5CD1B76A1A3411E300031A10 /* UTLUtilities.h */,
 				5CD1B76B1A3415B600031A10 /* TestView.h */,
 				5CD1B76C1A3415B600031A10 /* TestView.m */,
 				6036A5981BC9EC820028BD27 /* UTLSingleton.h */,
@@ -252,7 +252,7 @@
 			files = (
 				6036A59A1BC9EC820028BD27 /* UTLSingleton.m in Sources */,
 				5CD1B74B1A34117900031A10 /* ViewController.m in Sources */,
-				5CD1B7691A3411AF00031A10 /* Utilities.m in Sources */,
+				5CD1B7691A3411AF00031A10 /* UTLUtilities.m in Sources */,
 				5CD1B76D1A3415B600031A10 /* TestView.m in Sources */,
 				6036A5A11BCB45120028BD27 /* UTLMacro.m in Sources */,
 				5CD1B7481A34117900031A10 /* AppDelegate.m in Sources */,
