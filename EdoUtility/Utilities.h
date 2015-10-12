@@ -2,6 +2,22 @@
 @import Foundation;
 
 /**
+ *  Print format
+ *
+ *  @param format format text
+ *  @param ...    parameter text
+ */
+void UTLPrintFormat(NSString *format, ...);
+
+/**
+ *  Perform print format
+ *
+ *  @param format fomart text
+ *  @param args   parameter text
+ */
+void UTLPrintFormatVariant(NSString *format, va_list args);
+
+/**
  *  テキストフォーマット
  *
  *  @param format フォーマット文字列

@@ -2,6 +2,7 @@
 #import "ViewController.h"
 
 #import "TestView.h"
+#import "UTLMacro.h"
 
 @interface ViewController ()
 
@@ -13,7 +14,7 @@
     [super viewDidLoad];
 
     TestView *test = [[TestView alloc] init];
-    NSLog(@"%@", test);
+    UTLLog(@"%@", test);
     
     EDOSwapLayerForDebug();
     

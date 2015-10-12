@@ -3,6 +3,31 @@
 
 #import <objc/runtime.h>
 
+
+/**
+ *  Print format
+ */
+void UTLPrintFormat(NSString *format, ...)
+{
+    va_list args;
+    va_start(args, format);
+    UTLPrintFormatVariant(format, args);
+    va_end(args);
+}
+
+
+/**
+ *  Perform print format
+ *
+ *  @param format fomart text
+ *  @param args   parameter text
+ */
+void UTLPrintFormatVariant(NSString *format, va_list args)
+{
+    NSLogv(format, args);
+}
+
+
 // テキストフォーマット（大本）
 NSString* UTLFormatVariant(NSString *format, va_list args)
 {
